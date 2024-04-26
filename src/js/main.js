@@ -74,7 +74,10 @@ const addLine = (text, className) => {
     //let text = document.createTextNode(t);
     //tag.appendChild(text);
     tag.innerHTML = t
-    terminal.append(tag)
+    terminal.append(tag);
+
+    
+    tag.scrollIntoView();
 }
 
 const addMultiLine = (command, className) => {
